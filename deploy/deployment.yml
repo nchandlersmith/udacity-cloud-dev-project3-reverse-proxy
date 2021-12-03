@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: reverseproxy
   labels:
-    app: reverseproxy
+    app: udagram
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reverseproxy
+      app: udagram
   template:
     metadata:
       labels:
-        app: reverseproxy
+        app: udagram
     spec:
       containers:
         - name: reverseproxy
